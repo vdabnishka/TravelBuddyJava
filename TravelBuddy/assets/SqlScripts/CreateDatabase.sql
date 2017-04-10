@@ -1,0 +1,74 @@
+CREATE TABLE Trips (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT,
+	name TEXT NOT NULL,
+	description TEXT,
+	city TEXT,
+	province TEXT,
+	country TEXT,
+	startDate TEXT NOT NULL,
+	endDate TEXT
+);
+
+CREATE TABLE BillTypes (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT,
+	name TEXT NOT NULL,
+	description TEXT
+);
+
+CREATE TABLE Currencies (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT,
+	code TEXT NOT NULL,
+	name TEXT NOT NULL
+);
+
+CREATE TABLE Bills (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT,
+	tripId INTEGER NOT NULL,
+	billTypeId INTEGER NOT NULL,
+	currencyId INTEGER NOT NULL,
+	amount TEXT NOT NULL,
+	billDate TEXT NOT NULL,
+	comments TEXT,
+	image BLOB,
+	
+	FOREIGN KEY(tripId) REFERENCES Trips(_id),
+	FOREIGN KEY(billTypeId) REFERENCES BillTypes(_id)
+	FOREIGN KEY(currencyId) REFERENCES Currencies(_id)
+);
+
+CREATE TABLE Contacts (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT,
+	tripId INTEGER NOT NULL,
+	firstName TEXT NOT NULL,
+	lastName TEXT,
+	phone TEXT,
+	email TEXT,
+	company TEXT,
+
+	FOREIGN KEY(tripId) REFERENCES Trips(_id)
+);
+
+CREATE TABLE Notes (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT,
+	tripId INTEGER NOT NULL,
+	title TEXT NOT NULL,
+	content TEXT,
+	image BLOB,
+	
+	FOREIGN KEY(tripId) REFERENCES Trips(_id)
+);
+
+CREATE TABLE Settings (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT,
+	name TEXT NOT NULL,
+	value TEXT NOT NULL
+);
+
+CREATE TABLE WeatherCache (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT,
+	city TEXT NOT NULL,
+	province TEXT,
+	country TEXT NOT NULL,
+	updateTime INTEGER NOT NULL,
+	xml TEXT NOT NULL
+);

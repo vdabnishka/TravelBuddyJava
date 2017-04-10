@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/trip_edit_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trip_edit_name"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/trip_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/trip_edit_city_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trip_edit_city"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/trip_edit_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/trip_edit_state_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trip_edit_state"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/trip_edit_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/trip_edit_country_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trip_edit_country"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/trip_edit_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/trip_edit_startdate_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trip_edit_startdate"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/trip_edit_startdate"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:inputType="date"
+            android:clickable="true"
+            android:onClick="startDateClicked" />
+
+        <ImageButton
+            android:id="@+id/trip_edit_sdate_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/calendar"
+            android:contentDescription="@string/trip_edit_sdate_content_desc"
+            android:onClick="startDateClicked" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/trip_edit_enddate_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trip_edit_enddate"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/trip_edit_enddate"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:inputType="date"
+            android:clickable="true"
+            android:onClick="endDateClicked" />
+
+        <ImageButton
+            android:id="@+id/trip_edit_edate_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/calendar"
+            android:contentDescription="@string/trip_edit_edate_content_desc"
+            android:onClick="endDateClicked" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/trip_edit_desc_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trip_edit_description"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/trip_edit_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+   <ImageButton
+       android:id="@+id/trip_edit_save"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:background="@drawable/save"
+       android:contentDescription="@string/trip_edit_save_desc"
+       android:onClick="saveClicked" />
+
+</LinearLayout>

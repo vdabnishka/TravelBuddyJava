@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TravelBuddy</string>
+    <string name="no_trips">No trips yet here, create one!</string>
+    <string name="trip_list_separator">, </string>
+    <string name="trip_list_from">From </string>
+    <string name="trip_list_to"> to </string>
+    <string name="menu_addtrip">Add Trip</string>
+    <string name="menu_settings">Settings</string>
+    <string name="trip_edit_name">Trip Name</string>
+    <string name="trip_edit_city">City</string>
+    <string name="trip_edit_state">State/Province</string>
+    <string name="trip_edit_country">Country</string>
+    <string name="trip_edit_startdate">Start Date</string>
+    <string name="trip_edit_enddate">End Date</string>
+    <string name="trip_edit_description">Description</string>
+    <string name="title_new_trip">New Trip</string>
+    <string name="title_edit_trip">Edit Trip Info</string>
+    <string name="trip_edit_sdate_content_desc">select start date</string>
+    <string name="trip_edit_edate_content_desc">select end date</string>
+    <string name="trip_edit_save_desc">save your trip</string>
+    <string name="trip_info_name">Name</string>
+    <string name="trip_info_from">From</string>
+    <string name="trip_info_to">To</string>
+    <string name="trip_info_country">Country</string>
+    <string name="trip_info_state">State</string>
+    <string name="trip_info_description">Description</string>
+    <string name="trip_info_city">City</string>
+    <string name="tab_name_trip">details</string>
+    <string name="tab_name_contacts">contacts</string>
+
+</resources>

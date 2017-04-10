@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trip_info_table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow>
+        <TextView android:text="@string/trip_info_name" android:layout_marginRight="15dp"/>
+        <TextView android:layout_weight="0.8" android:id="@+id/trip_info_name"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/trip_info_from" android:layout_marginRight="15dp"/>
+        <TextView android:layout_weight="0.8" android:id="@+id/trip_info_startdate"/>
+        </TableRow>
+    <TableRow>
+        <TextView android:text="@string/trip_info_to" android:layout_marginRight="15dp"/>
+        <TextView android:layout_weight="0.8" android:id="@+id/trip_info_enddate"/>
+        </TableRow>
+    <TableRow>
+        <TextView android:text="@string/trip_info_country" android:layout_marginRight="15dp"/>
+        <TextView android:layout_weight="0.8" android:id="@+id/trip_info_country"/>
+        </TableRow>
+    <TableRow>
+        <TextView android:text="@string/trip_info_state" android:layout_marginRight="15dp"/>
+        <TextView android:layout_weight="0.8" android:id="@+id/trip_info_state"/>
+        </TableRow>
+    <TableRow>
+        <TextView android:text="@string/trip_info_city" android:layout_marginRight="15dp"/>
+        <TextView android:layout_weight="0.8" android:id="@+id/trip_info_city"/>
+        </TableRow>
+    <TableRow>
+        <TextView android:text="@string/trip_info_description" android:layout_marginRight="15dp"/>
+        <TextView android:layout_weight="0.8" android:id="@+id/trip_info_description"/>
+        </TableRow>
+</TableLayout>
